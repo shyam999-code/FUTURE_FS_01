@@ -38,9 +38,20 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.addEventListener('click', () => {
             // Placeholder for simple mobile menu functionality
             // For a production site, we'd add CSS for .nav-links.active
-            alert('Mobile menu clicked! In a full implementation, this would open a sidebar.');
+            mobileMenu.classList.toggle('active');
+            navList.classList.toggle('active');
         });
     }
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                navList.classList.remove('active');
+            }
+        });
+    });
 
     // Scroll Reveal Animation (Intersection Observer)
     const fadeElements = document.querySelectorAll('.fade-in');
