@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manda Shyam | Student & Web Developer</title>
+    <meta name="description"
+        content="Personal portfolio of Manda Shyam, a student and aspiring web developer passionate about building clean and responsive web experiences.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-content">
+            <a href="#home" class="logo">My portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <span class="badge">CSE STUDENT</span>
+                <h1>Hi, I'm <span>Manda Shyam</span></h1>
+                <h2>Student | Web Developer</h2>
+                <p class="tagline">Passionate about building clean and responsive web experiences.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shyam-kumar-475ab3348/" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://leetcode.com/u/Shyam_999/" target="_blank" title="LeetCode"><i
+                                class="fas fa-code"></i></a>
+                        <a href="https://www.codechef.com/users/shyamkumar_20" target="_blank" title="CodeChef"><i
+                                class="fas fa-laptop-code"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual fade-in">
+                <!-- Profile Image -->
+                <div class="profile-frame">
+                    <div class="profile-img">
+                        <img src="imgs/photo.jpeg" alt="Manda Shyam">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am Manda Shyam, a Computer Science and Engineering student passionate about web development and
+                        problem-solving.
+                        I enjoy building responsive,user-friendly websites and continuously improving my technical
+                        skills. I actively
+                        practice coding on platforms like LeetCode and CodeChef to strengthen my logical thinking and
+                        programming abilities.</p>
+
+                    <p>Beyond academics, I am enthusiastic about learning new technologies and taking on challenges that
+                        help me grow as a developer.
+                        In my free time, I enjoy playing badminton to stay active and listening to music to relax and
+                        stay creative.</p>
+                </div>
+                <div class="about-skills">
+                    <h3>My Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-badge" style="cursor: pointer;"
+                            onclick="openCertModal('imgs/c.jpeg', 'C Programming Certificate')"><i
+                                class="fas fa-code"></i> C</div>
+                        <div class="skill-badge" style="cursor: pointer;"
+                            onclick="openCertModal('imgs/java.jpeg', 'Java Certificate')"><i class="fab fa-java"></i> Java</div>
+                        <div class="skill-badge" style="cursor: pointer;"
+                            onclick="openCertModal('imgs/python.jpeg', 'Python Certificate')"><i
+                                class="fab fa-python"></i> Python</div>
+                        <div class="skill-badge" style="cursor: pointer;"
+                            onclick="openCertModal('imgs/Html.jpeg', 'HTML Certificate')"><i class="fab fa-html5"></i>
+                            HTML</div>
+                        <div class="skill-badge" style="cursor: pointer;"
+                            onclick="openCertModal('imgs/Css.jpeg', 'CSS Certificate')"><i class="fab fa-css3-alt"></i>
+                            CSS</div>
+                        <div class="skill-badge" style="cursor: pointer;"
+                            onclick="openCertModal('imgs/javascript.jpeg', 'JavaScript Certificate')"><i
+                                class="fab fa-js"></i> JavaScript</div>
+                    </div>
+
+                    <h3 class="mt-4">Coding Platforms</h3>
+                    <div class="platforms-flex" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="https://www.codechef.com/users/shyamkumar_20" target="_blank" class="btn btn-outline"
+                            style="padding: 0.6rem 1.25rem;">
+                            <i class="fas fa-laptop-code"></i> CodeChef
+                        </a>
+                        <a href="https://leetcode.com/u/Shyam_999/" target="_blank" class="btn btn-outline"
+                            style="padding: 0.6rem 1.25rem;">
+                            <i class="fas fa-code"></i> LeetCode
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="academics-section">
+                <h3 class="mt-4 text-center">Academic Performance</h3>
+                <div class="sgpa-container">
+                    <div class="sgpa-card">
+                        <span class="sem-label">1st Semester SGPA</span>
+                        <span class="sgpa-value">8.87</span>
+                    </div>
+                    <div class="sgpa-card">
+                        <span class="sem-label">2nd Semester SGPA</span>
+                        <span class="sgpa-value">9.51</span>
+                    </div>
+                </div>
+
+                <h3 class="mt-5 text-center">Educational Journey</h3>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <h3>Schooling</h3>
+                            <p>Secondary School Certificate (88%)</p>
+                            <span class="edu-status">Completed</span>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-icon"><i class="fas fa-school"></i></div>
+                        <div class="edu-details">
+                            <h3>Intermediate Education</h3>
+                            <p>MPC (Maths, Physics, Chemistry) - 95%</p>
+                            <span class="edu-status">Completed</span>
+                        </div>
+                    </div>
+                    <div class="education-card featured">
+                        <div class="edu-icon"><i class="fas fa-university"></i></div>
+                        <div class="edu-details">
+                            <h3>Engineering Graduation</h3>
+                            <p>B.Tech in Computer Science</p>
+                            <span class="edu-status">Currently Pursuing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-in">
+                    <div class="project-img-container">
+                        <div class="project-placeholder">Project 1</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website built with clean HTML, CSS, and JS.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:void(0)" class="btn-icon"><i class="fab fa-github"></i> Code</a>
+                            <a href="javascript:void(0)" class="btn-icon"><i class="fas fa-external-link-alt"></i>
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates section-padding">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+                <div class="cert-card fade-in"
+                    onclick="openCertModal('imgs/img1.jpeg', 'Smart India Hackathon 2025 Finalist')">
+                    <div class="cert-img-container">
+                        <img src="imgs/img1.jpeg" alt="Smart India Hackathon 2025 Finalist">
+                        <div class="cert-img-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Smart India Hackathon 2025 Finalist</h3>
+                        <p class="issuer">SIH 2025</p>
+                        <p>Finalist certificate for the Smart India Hackathon 2025.</p>
+                    </div>
+                </div>
+                <div class="cert-card fade-in" onclick="openCertModal('imgs/img2.jpeg', 'Hackathon Experience')">
+                    <div class="cert-img-container">
+                        <img src="imgs/img2.jpeg" alt="Hackathon Experience">
+                        <div class="cert-img-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Hackathon Experience</h3>
+                        <p class="issuer">Tech Event</p>
+                        <p>Certificate of participation and experience in a hackathon event.</p>
+                    </div>
+                </div>
+                <div class="cert-card fade-in"
+                    onclick="openCertModal('imgs/img3.jpeg', 'Youth &amp; Empowerment Skills')">
+                    <div class="cert-img-container">
+                        <img src="imgs/img3.jpeg" alt="Youth &amp; Empowerment Skills">
+                        <div class="cert-img-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Youth &amp; Empowerment Skills</h3>
+                        <p class="issuer">Skill Development</p>
+                        <p>Certificate representing youth empowerment and skill acquisition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <span class="close-modal" onclick="closeCertModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Let's connect,collaborate and build something amazing together ? Drop me a message</p>
+                    <div class="contact-details">
+                        <a href="mailto:shyam.manda2006@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>shyam.manda2006@gmail.com</span>
+                        </a>
+                        <a href="https://maps.google.com/?q=Visakhapatnam,+Andhra+Pradesh" target="_blank"
+                            class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Vizag, Andhra Pradesh</span>
+                        </a>
+                    </div>
+                    <div class="social-links-footer">
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shyam-kumar-475ab3348/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://leetcode.com/u/Shyam_999/" target="_blank" title="LeetCode"><i
+                                class="fas fa-code"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Manda Shyam. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "jgJQDGAo03QYbuFuz",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
