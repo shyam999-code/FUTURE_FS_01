@@ -1,20 +1,20 @@
 :root {
-    /* Color Palette - Refined */
-    --primary-color: #0ea5e9;
+    /* Color Palette - Dark Theme */
+    --primary-color: #38bdf8;
     --primary-light: #7dd3fc;
     --primary-dark: #0369a1;
-    --primary-hover: #0284c7;
-    --bg-color: #ffffff;
-    --surface-color: #f8fafc;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --accent-blue: rgba(14, 165, 233, 0.08);
-    --border-color: #e2e8f0;
-    --white: #ffffff;
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --primary-hover: #0ea5e9;
+    --bg-color: #0f172a;
+    --surface-color: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-blue: rgba(56, 189, 248, 0.15);
+    --border-color: #334155;
+    --white: #1e293b;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.5);
 
     /* Layout */
     --header-height: 80px;
@@ -206,7 +206,7 @@ img {
 /* Navigation */
 .navbar {
     height: var(--header-height);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(15, 23, 42, 0.8);
     backdrop-filter: blur(12px) saturate(180%);
     position: fixed;
     top: 0;
@@ -221,7 +221,7 @@ img {
     height: 70px;
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(15, 23, 42, 0.95);
 }
 
 .nav-content {
